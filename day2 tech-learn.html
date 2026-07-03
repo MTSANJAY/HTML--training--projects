@@ -1,0 +1,303 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechLearn</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#aa9ac800;
+}
+
+/* Navigation Bar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0f172a;
+    color:white;
+    padding:15px 50px;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+/* Hero Section */
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#2563eb,#1e3a8a);
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.hero-content button{
+    background:#facc15;
+    color:black;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero-content button:hover{
+    transform:scale(1.05);
+}
+
+/* Course Content */
+.course-content{
+    display:none;
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.course-content h2{
+    color:#1e3a8a;
+    margin-bottom:15px;
+}
+
+.course-content ul{
+    margin-left:25px;
+    line-height:2;
+    font-size:18px;
+}
+
+/* Features Section */
+.features{
+    padding:60px 40px;
+}
+
+.features h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#1e3a8a;
+    font-size:35px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border:2px solid #dbeafe;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+/* Footer */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive Design */
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:35px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">TechLearn</div>
+
+    <div class="nav-links">
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('courses')">Courses</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Learn Web Development</h1>
+        <p>Master HTML, CSS and JavaScript.</p>
+        <button onclick="showSection('courses')">Get Started</button>
+    </div>
+</section>
+
+<!-- Hidden Course Details -->
+<section id="courseContent" class="course-content">
+    <h2>What You Will Learn</h2>
+
+    <ul>
+        <li>HTML Structure and Semantic Tags</li>
+        <li>CSS Styling and Modern Layouts</li>
+        <li>Flexbox and CSS Grid</li>
+        <li>Responsive Web Design</li>
+        <li>JavaScript Fundamentals</li>
+        <li>DOM Manipulation</li>
+        <li>Form Validation</li>
+        <li>Mini Real-Time Projects</li>
+    </ul>
+</section>
+
+<!-- Contact Details (hidden by default) -->
+<section id="contactContent" class="course-content" style="display:none;">
+    <h2>Contact Us</h2>
+    <p style="line-height:1.8; font-size:18px;">Have questions? Reach out to us:</p>
+    <ul style="margin-left:25px; line-height:1.8; font-size:18px;">
+        <li>Email: support@techlearn.example</li>
+        <li>Phone: +1 (555) 123-4567</li>
+        <li>Address: 123 Learning Ave, Web City</li>
+    </ul>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <h2>Our Courses</h2>
+
+    <div class="feature-grid">
+
+        <div class="card">
+            <h3>HTML</h3>
+            <p>
+                Learn webpage structure, forms,
+                tables, multimedia and semantic elements.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>
+                Create attractive designs using colors,
+                Flexbox, Grid and animations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>
+                Build interactive websites with events,
+                functions and DOM manipulation.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 TechLearn. All Rights Reserved.</p>
+</footer>
+
+<script>
+function showSection(name){
+    var course = document.getElementById('courseContent');
+    var contact = document.getElementById('contactContent');
+
+    // hide both sections by default
+    if(course) course.style.display = 'none';
+    if(contact) contact.style.display = 'none';
+
+    if(name === 'courses'){
+        if(course) {
+            course.style.display = 'block';
+            course.scrollIntoView({behavior:'smooth'});
+        }
+    } else if(name === 'contact'){
+        if(contact) {
+            contact.style.display = 'block';
+            contact.scrollIntoView({behavior:'smooth'});
+        }
+    } else if(name === 'home'){
+        window.scrollTo({top:0, behavior:'smooth'});
+    }
+}
+</script>
+
+</body>
+</html>
+```

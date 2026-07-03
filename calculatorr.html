@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CASIO Calculator</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+}
+
+.calculator{
+    width:400px;
+    background:#1b1f24;
+    padding:25px;
+    border-radius:30px;
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.logo img{
+    width:200px;
+    background:white;
+    padding:10px;
+    border-radius:10px;
+}
+
+.model{
+    text-align:right;
+    color:#cbd5e1;
+    font-size:14px;
+    margin-bottom:15px;
+    letter-spacing:1px;
+}
+
+#display{
+    width:100%;
+    height:90px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    background:#dce6d0;
+    color:#111;
+    font-size:28px;
+    text-align:right;
+    padding:20px;
+    margin-bottom:20px;
+    font-family:monospace;
+    box-shadow:inset 0 4px 8px rgba(0,0,0,.2);
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+button{
+    height:65px;
+    border:none;
+    border-radius:12px;
+    font-size:22px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.2s;
+    color:white;
+    background:#2c323a;
+    box-shadow:
+        0 4px 8px rgba(0,0,0,.3),
+        inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+button:active{
+    transform:scale(.96);
+}
+
+.operator{
+    background:#374151;
+}
+
+.equal{
+    background:#f97316;
+}
+
+.clear{
+    background:#dc2626;
+}
+
+.zero{
+    grid-column:span 2;
+}
+
+.footer{
+    text-align:center;
+    color:#94a3b8;
+    margin-top:15px;
+    font-size:13px;
+}
+</style>
+</head>
+<body>
+
+<div class="calculator">
+
+    <!-- Put your CASIO logo image in same folder -->
+    <div class="logo">
+        <img src="casio-logo.png" alt="CASIO">
+    </div>
+
+    <div class="model">fx-991ES PLUS</div>
+
+    <input type="text" id="display" readonly>
+
+    <div class="buttons">
+
+        <button class="clear" onclick="clearDisplay()">AC</button>
+        <button class="operator" onclick="appendValue('(')">(</button>
+        <button class="operator" onclick="appendValue(')')">)</button>
+        <button class="operator" onclick="appendValue('/')">÷</button>
+
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button class="operator" onclick="appendValue('*')">×</button>
+
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button class="operator" onclick="appendValue('-')">−</button>
+
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button class="operator" onclick="appendValue('+')">+</button>
+
+        <button class="zero" onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+        <button class="equal" onclick="calculate()">=</button>
+
+    </div>
+
+    <div class="footer">
+        CASIO Style Calculator
+    </div>
+
+</div>
+
+<script>
+let expression = "";
+
+function appendValue(value){
+    expression += value;
+    document.getElementById("display").value = expression;
+}
+
+function calculate(){
+    try{
+        let result = eval(expression);
+
+        document.getElementById("display").value =
+        expression + " = " + result;
+
+        expression = result.toString();
+    }
+    catch(error){
+        document.getElementById("display").value = "Error";
+        expression = "";
+    }
+}
+
+function clearDisplay(){
+    expression = "";
+    document.getElementById("display").value = "";
+}
+</script>
+
+</body>
+</html>
