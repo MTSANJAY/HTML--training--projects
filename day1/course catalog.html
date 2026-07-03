@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Catalog</title>
+    <style>
+        :root {
+            --bg: #fafbff;
+            --surface: #ffffff;
+            --surface-strong: #f4f7ff;
+            --primary: #3b82f6;
+            --primary-dark: #1d4ed8;
+            --text: #111827;
+            --muted: #4b5563;
+            --border: #d1d5db;
+            --shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--text);
+            background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 100%);
+        }
+
+        .page-wrapper {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 3rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: clamp(2rem, 4vw, 3rem);
+            letter-spacing: -0.04em;
+        }
+
+        header p {
+            margin: 0.75rem auto 0;
+            max-width: 680px;
+            color: var(--muted);
+            line-height: 1.75;
+        }
+
+        .catalog-card,
+        .detail-card {
+            background: var(--surface);
+            border: 1px solid rgba(209, 213, 219, 0.8);
+            border-radius: 28px;
+            box-shadow: var(--shadow);
+            padding: 1.75rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .catalog-card table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .catalog-card th,
+        .catalog-card td {
+            text-align: left;
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .catalog-card th {
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        .catalog-card tr:last-child td {
+            border-bottom: none;
+        }
+
+        .course-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+            color: #1d4ed8;
+            font-weight: 700;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.5rem;
+        }
+
+        .detail-card h2,
+        .detail-card h3,
+        .detail-card h4 {
+            margin-top: 0;
+        }
+
+        .detail-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .detail-card p,
+        .detail-card li {
+            color: var(--muted);
+            line-height: 1.75;
+        }
+
+        .detail-card ul,
+        .detail-card ol {
+            padding-left: 1.25rem;
+            margin: 0.75rem 0 0;
+        }
+
+        .detail-card ul li,
+        .detail-card ol li {
+            margin-bottom: 0.75rem;
+        }
+
+        .register-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            text-decoration: none;
+            color: white;
+            background: var(--primary);
+            padding: 0.95rem 1.4rem;
+            border-radius: 999px;
+            font-weight: 700;
+            transition: background 0.2s ease, transform 0.2s ease;
+            margin-top: 1rem;
+        }
+
+        .register-link:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 820px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .page-wrapper {
+                padding: 1.5rem 1rem 2rem;
+            }
+
+            .catalog-card,
+            .detail-card {
+                padding: 1.25rem;
+            }
+
+            .catalog-card th,
+            .catalog-card td {
+                padding: 0.85rem 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <h1>Course Catalog</h1>
+            <p>Explore the placement training courses available for Java and Python learners, including duration, fees, and learning outcomes.</p>
+        </header>
+
+        <section class="catalog-card" aria-labelledby="catalog-heading">
+            <h2 id="catalog-heading">Available Courses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Duration</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Java</td>
+                        <td>3 months</td>
+                        <td>₹5,000</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>2 months</td>
+                        <td>₹4,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="detail-grid">
+            <article class="detail-card">
+                <h2>Java Course Overview</h2>
+                <h3>What you will learn</h3>
+                <p>Java is a powerful, object-oriented programming language widely used in web, mobile, and enterprise applications. This course covers Java fundamentals, OOP concepts, exception handling, collections, and basic application development.</p>
+                <h4>Learning Outcomes</h4>
+                <ul>
+                    <li>Understand the fundamentals of Java programming and OOP concepts.</li>
+                    <li>Develop applications using classes, objects, inheritance, and exception handling.</li>
+                    <li>Apply Java programming skills to solve real-world problems.</li>
+                </ul>
+                <h4>Core Concepts</h4>
+                <ol>
+                    <li>Object-Oriented Programming (OOP)</li>
+                    <li>Classes and Objects</li>
+                    <li>Inheritance and Polymorphism</li>
+                    <li>Exception Handling</li>
+                </ol>
+            </article>
+
+            <article class="detail-card">
+                <h2>Python Course Overview</h2>
+                <h3>What you will learn</h3>
+                <p>Python is a simple and versatile language known for readability and ease of use. It is widely used in web development, data science, AI, and automation. This course introduces Python basics, data structures, functions, object-oriented programming, and practical applications.</p>
+                <h4>Learning Outcomes</h4>
+                <ul>
+                    <li>Understand Python syntax, data types, and control structures.</li>
+                    <li>Develop programs using functions, modules, and OOP concepts.</li>
+                    <li>Use Python for automation, data processing, and problem-solving.</li>
+                </ul>
+                <h4>Core Concepts</h4>
+                <ol>
+                    <li>Variables and Data Types</li>
+                    <li>Functions and Modules</li>
+                    <li>Lists, Tuples, and Dictionaries</li>
+                    <li>File Handling</li>
+                </ol>
+            </article>
+        </section>
+
+        <section class="detail-card">
+            <h2>Ready to Register?</h2>
+            <p>Secure your seat in the next batch by visiting the registration page.</p>
+            <a class="register-link" href="https://hit.edu.in/" target="_blank" rel="noreferrer">Register Now</a>
+        </section>
+    </div>
+</body>
+</html>

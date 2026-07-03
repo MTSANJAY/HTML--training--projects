@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence and Data Science</title>
+    <style>
+        :root {
+            --bg: #f4f7ff;
+            --surface: #ffffff;
+            --surface-soft: #eff3ff;
+            --primary: #2563eb;
+            --primary-strong: #1d4ed8;
+            --text: #111827;
+            --muted: #4b5563;
+            --border: #d1d5db;
+            --shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top, #e7f0ff 0%, #f8fafc 45%, #f4f7ff 100%);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        header {
+            display: grid;
+            gap: 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: clamp(2rem, 4vw, 3rem);
+            letter-spacing: -0.04em;
+        }
+
+        header p {
+            margin: 0 auto;
+            max-width: 720px;
+            color: var(--muted);
+        }
+
+        .hero {
+            display: grid;
+            gap: 1.5rem;
+            align-items: center;
+            grid-template-columns: 1.1fr 0.9fr;
+            margin-bottom: 2rem;
+        }
+
+        .hero img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            object-fit: cover;
+            min-height: 260px;
+        }
+
+        .hero-text {
+            background: var(--surface);
+            border: 1px solid rgba(209, 213, 219, 0.8);
+            border-radius: 24px;
+            padding: 1.75rem;
+            box-shadow: var(--shadow);
+        }
+
+        .hero-text h2 {
+            margin-top: 0;
+            color: var(--primary-strong);
+        }
+
+        .hero-text p {
+            margin: 0.8rem 0 0;
+            color: var(--muted);
+        }
+
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid rgba(209, 213, 219, 0.8);
+            border-radius: 26px;
+            padding: 1.75rem;
+            box-shadow: var(--shadow);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .course-list,
+        .achievement-list,
+        .faculty-table {
+            margin: 0;
+            padding: 0;
+            list-style-position: inside;
+        }
+
+        .course-list li,
+        .achievement-list li {
+            margin-bottom: 0.85rem;
+        }
+
+        .faculty-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .faculty-table th,
+        .faculty-table td {
+            padding: 1rem 1.2rem;
+            border: 1px solid #e5e7eb;
+            text-align: left;
+        }
+
+        .faculty-table th {
+            background: #f8fafc;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-size: 0.85rem;
+        }
+
+        .section-title {
+            color: var(--primary-strong);
+            margin-bottom: 0.9rem;
+        }
+
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.95rem 1.5rem;
+            background: var(--primary);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 999px;
+            box-shadow: 0 14px 30px rgba(37, 99, 235, 0.18);
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .link-button:hover {
+            transform: translateY(-2px);
+            background: var(--primary-strong);
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 1.5rem 1rem 2rem;
+            }
+
+            .hero-text,
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Department of Artificial Intelligence and Data Science</h1>
+            <p>Empowering students with AI, data analytics, and software development skills for placement success and modern industry demands.</p>
+        </header>
+
+        <section class="hero">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="AI and data science illustration">
+            <div class="hero-text">
+                <h2>About the Department</h2>
+                <p>The Department of Artificial Intelligence and Data Science is dedicated to delivering high-quality education in AI, data science, computer science, programming, and software development. We promote innovation, research, and industry-relevant learning paths.</p>
+            </div>
+        </section>
+
+        <div class="grid">
+            <article class="card">
+                <h2 class="section-title">Subjects Offered</h2>
+                <ul class="course-list">
+                    <li>Artificial Intelligence</li>
+                    <li>Data Science</li>
+                    <li>Programming in Java</li>
+                    <li>Data Structures</li>
+                    <li>Database Management Systems</li>
+                    <li>Operating Systems</li>
+                    <li>Computer Networks</li>
+                    <li>Web Development</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2 class="section-title">Department Achievements</h2>
+                <ol class="achievement-list">
+                    <li>100% placement record for top batches</li>
+                    <li>Industry collaboration projects</li>
+                    <li>National-level coding competitions</li>
+                    <li>Research publications and innovation awards</li>
+                </ol>
+            </article>
+        </div>
+
+        <article class="card">
+            <h2 class="section-title">Faculty Members</h2>
+            <table class="faculty-table">
+                <thead>
+                    <tr>
+                        <th>Faculty ID</th>
+                        <th>Name</th>
+                        <th>Designation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Kumar</td>
+                        <td>Professor</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sivamaran</td>
+                        <td>Associate Professor</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kishore</td>
+                        <td>Assistant Professor</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article class="card">
+            <h2 class="section-title">College Website</h2>
+            <p>Visit our official college site for more details and registration information.</p>
+            <a class="link-button" href="https://hit.edu.in" target="_blank" rel="noreferrer">Visit HIT</a>
+        </article>
+    </div>
+</body>
+</html>
