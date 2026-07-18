@@ -1,0 +1,3467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.employee.automation.EmployeeAutomationTest" time="41.848" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\SANJAY M\.cache\selenium\chromedriver\win64\150.0.7871.124\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\SANJAY M\Desktop\placement tra-2\day11\EmployeeAutomation\target\test-classes;C:\Users\SANJAY M\Desktop\placement tra-2\day11\EmployeeAutomation\target\classes;C:\Users\SANJAY M\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.4\webdrivermanager-6.3.4.jar;C:\Users\SANJAY M\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\SANJAY M\.m2\repository\com\github\docker-java\docker-java\3.7.1\docker-java-3.7.1.jar;C:\Users\SANJAY M\.m2\repository\com\github\docker-java\docker-java-core\3.7.1\docker-java-core-3.7.1.jar;C:\Users\SANJAY M\.m2\repository\com\github\docker-java\docker-java-api\3.7.1\docker-java-api-3.7.1.jar;C:\Users\SANJAY M\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\SANJAY M\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.1\jackson-databind-2.20.1.jar;C:\Users\SANJAY M\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\SANJAY M\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\SANJAY M\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.7.1\docker-java-transport-httpclient5-3.7.1.jar;C:\Users\SANJAY M\.m2\repository\com\github\docker-java\docker-java-transport\3.7.1\docker-java-transport-3.7.1.jar;C:\Users\SANJAY M\.m2\repository\net\java\dev\jna\jna\5.18.1\jna-5.18.1.jar;C:\Users\SANJAY M\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\SANJAY M\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\SANJAY M\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\SANJAY M\.m2\repository\commons-codec\commons-codec\1.19.0\commons-codec-1.19.0.jar;C:\Users\SANJAY M\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\SANJAY M\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.6\httpclient5-5.6.jar;C:\Users\SANJAY M\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.4\httpcore5-5.4.jar;C:\Users\SANJAY M\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.4\httpcore5-h2-5.4.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-java\4.45.0\selenium-java-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-api\4.45.0\selenium-api-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.45.0\selenium-chrome-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.45.0\selenium-chromium-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-json\4.45.0\selenium-json-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.45.0\selenium-manager-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.45.0\selenium-devtools-latest-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.45.0\selenium-devtools-v147-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.45.0\selenium-devtools-v148-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v149\4.45.0\selenium-devtools-v149-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.45.0\selenium-edge-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.45.0\selenium-firefox-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-http\4.45.0\selenium-http-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.45.0\selenium-ie-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.45.0\selenium-remote-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\SANJAY M\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\SANJAY M\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\SANJAY M\.m2\repository\com\google\errorprone\error_prone_annotations\2.47.0\error_prone_annotations-2.47.0.jar;C:\Users\SANJAY M\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-api\1.63.0\opentelemetry-api-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-context\1.63.0\opentelemetry-context-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-common\1.63.0\opentelemetry-common-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.63.0\opentelemetry-exporter-logging-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.63.0\opentelemetry-sdk-common-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.63.0\opentelemetry-sdk-extension-autoconfigure-spi-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.63.0\opentelemetry-sdk-extension-autoconfigure-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.63.0\opentelemetry-sdk-trace-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.63.0\opentelemetry-sdk-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.63.0\opentelemetry-sdk-metrics-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.63.0\opentelemetry-sdk-logs-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\net\bytebuddy\byte-buddy\1.18.10\byte-buddy-1.18.10.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-os\4.45.0\selenium-os-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.45.0\selenium-safari-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-support\4.45.0\selenium-support-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\SANJAY M\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\SANJAY M\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\SANJAY M\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\21\bin"/>
+    <property name="sun.java.command" value="C:\Users\SANJAY M\AppData\Local\Temp\surefire16952082628857830683\surefirebooter-20260718164556686_3.jar C:\Users\SANJAY M\AppData\Local\Temp\surefire16952082628857830683 2026-07-18T16-45-56_541-jvmRun1 surefire-20260718164556686_1tmp surefire_0-20260718164556686_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\SANJAY M\Desktop\placement tra-2\day11\EmployeeAutomation\target\test-classes;C:\Users\SANJAY M\Desktop\placement tra-2\day11\EmployeeAutomation\target\classes;C:\Users\SANJAY M\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.4\webdrivermanager-6.3.4.jar;C:\Users\SANJAY M\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\SANJAY M\.m2\repository\com\github\docker-java\docker-java\3.7.1\docker-java-3.7.1.jar;C:\Users\SANJAY M\.m2\repository\com\github\docker-java\docker-java-core\3.7.1\docker-java-core-3.7.1.jar;C:\Users\SANJAY M\.m2\repository\com\github\docker-java\docker-java-api\3.7.1\docker-java-api-3.7.1.jar;C:\Users\SANJAY M\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\SANJAY M\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.1\jackson-databind-2.20.1.jar;C:\Users\SANJAY M\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\SANJAY M\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\SANJAY M\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.7.1\docker-java-transport-httpclient5-3.7.1.jar;C:\Users\SANJAY M\.m2\repository\com\github\docker-java\docker-java-transport\3.7.1\docker-java-transport-3.7.1.jar;C:\Users\SANJAY M\.m2\repository\net\java\dev\jna\jna\5.18.1\jna-5.18.1.jar;C:\Users\SANJAY M\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\SANJAY M\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\SANJAY M\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\SANJAY M\.m2\repository\commons-codec\commons-codec\1.19.0\commons-codec-1.19.0.jar;C:\Users\SANJAY M\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\SANJAY M\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.6\httpclient5-5.6.jar;C:\Users\SANJAY M\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.4\httpcore5-5.4.jar;C:\Users\SANJAY M\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.4\httpcore5-h2-5.4.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-java\4.45.0\selenium-java-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-api\4.45.0\selenium-api-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.45.0\selenium-chrome-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.45.0\selenium-chromium-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-json\4.45.0\selenium-json-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.45.0\selenium-manager-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.45.0\selenium-devtools-latest-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.45.0\selenium-devtools-v147-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.45.0\selenium-devtools-v148-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v149\4.45.0\selenium-devtools-v149-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.45.0\selenium-edge-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.45.0\selenium-firefox-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-http\4.45.0\selenium-http-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.45.0\selenium-ie-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.45.0\selenium-remote-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\SANJAY M\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\SANJAY M\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\SANJAY M\.m2\repository\com\google\errorprone\error_prone_annotations\2.47.0\error_prone_annotations-2.47.0.jar;C:\Users\SANJAY M\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-api\1.63.0\opentelemetry-api-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-context\1.63.0\opentelemetry-context-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-common\1.63.0\opentelemetry-common-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.63.0\opentelemetry-exporter-logging-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.63.0\opentelemetry-sdk-common-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.63.0\opentelemetry-sdk-extension-autoconfigure-spi-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.63.0\opentelemetry-sdk-extension-autoconfigure-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.63.0\opentelemetry-sdk-trace-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.63.0\opentelemetry-sdk-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.63.0\opentelemetry-sdk-metrics-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.63.0\opentelemetry-sdk-logs-1.63.0.jar;C:\Users\SANJAY M\.m2\repository\net\bytebuddy\byte-buddy\1.18.10\byte-buddy-1.18.10.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-os\4.45.0\selenium-os-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.45.0\selenium-safari-driver-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\org\seleniumhq\selenium\selenium-support\4.45.0\selenium-support-4.45.0.jar;C:\Users\SANJAY M\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\SANJAY M\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\SANJAY M\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\SANJAY M"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Users\SANJAY M\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\SANJAY M\Desktop\placement tra-2\day11\EmployeeAutomation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\SANJAY M\AppData\Local\Temp\surefire16952082628857830683\surefirebooter-20260718164556686_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.11+10-LTS"/>
+    <property name="user.name" value="SANJAY M"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.11+10"/>
+    <property name="localRepository" value="C:\Users\SANJAY M\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\SANJAY~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.11"/>
+    <property name="user.dir" value="C:\Users\SANJAY M\Desktop\placement tra-2\day11\EmployeeAutomation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\SANJAY M\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\Users\SANJAY M\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\SANJAY M\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\SANJAY M\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\gradle\latest\bin;C:\Users\SANJAY M\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\maven\latest\bin;C:\Users\SANJAY M\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\21\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python313\Scripts\;C:\Python313\;C:\Program Files\Git\mingw64\bin\git.exe;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\Java\jdk-26.0.1\bin;C:\Program Files\Java\jdk-26.0.1\bin;C:\Program Files\Java\jdk-26.0.1\bin;C:\Program Files\Java\jdk-26.0.1;C:\Users\SANJAY M\Desktop\placement tra-2\day11\Mavan\apache-maven-3.9.16-bin\apache-maven-3.9.16\bin;C:\Users\SANJAY M\Desktop\placement tra-2\day11\Mavan\apache-maven-3.9.16-bin\apache-maven-3.9.16\bin;C:\Users\SANJAY M\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\SANJAY M\AppData\Local\Programs\Python\Python311\;C:\Users\SANJAY M\AppData\Local\Microsoft\WindowsApps;C:\Microsoft VS Code\bin;C:\Users\SANJAY M\AppData\Roaming\npm;C:\Users\SANJAY M\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\cmd;C:\Users\SANJAY M\AppData\Local\Programs\Antigravity IDE\bin;c:\Users\SANJAY M\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.11+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testLeaveRequestWorkflow" classname="com.employee.automation.EmployeeAutomationTest" time="9.199">
+    <system-out><![CDATA[Starting frontend server automatically...
+[OPERATION LOGGED] Navigate to Login Page - Status: SUCCESS - Details: Loaded login page successfully
+[OPERATION LOGGED] Employee Login - Status: SUCCESS - Details: Logged in as ram kumar (720823108011@hit.edu.in)
+Step 1: Applied for leave successfully. Status is Pending.
+[OPERATION LOGGED] Apply Leave Request - Status: SUCCESS - Details: Applied for Casual Leave from 2026-07-20 to 2026-07-22. Reason: Family Function
+[OPERATION LOGGED] Employee Logout - Status: SUCCESS - Details: Logged out from employee account
+[OPERATION LOGGED] Admin Login - Status: SUCCESS - Details: Logged in as admin@admin.com
+Step 2: Admin successfully approved the leave request.
+[OPERATION LOGGED] Admin Approve Leave - Status: SUCCESS - Details: Approved Casual Leave request for ram kumar
+[OPERATION LOGGED] Admin Logout - Status: SUCCESS - Details: Logged out from admin account
+[OPERATION LOGGED] Employee Login - Status: SUCCESS - Details: Logged in as ram kumar (720823108011@hit.edu.in) to verify status
+Step 3: Employee verified leave request is Approved with correct comments.
+[OPERATION LOGGED] Verify Leave Status - Status: SUCCESS - Details: Verified leave request is Approved with comment: 'Approved to build automation testing'
+[OPERATION LOGGED] Employee Logout - Status: SUCCESS - Details: Logged out from employee account (final)
+==================================================
+DIAGNOSTIC: Page Source on TearDown:
+<html lang="en"><head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react-employeemanagement</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/SANJAY M/Desktop/placement tra-2/day11/EmployeeManager/react-employeemanagement/src/index.css">:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/SANJAY M/Desktop/placement tra-2/day11/EmployeeManager/react-employeemanagement/src/App.css">
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* Google Font */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+body{
+  background:#0f172a;
+  color:#fff;
+}
+.app{
+  width:90%;
+  max-width:1400px;
+  margin:auto;
+  padding:30px 0;
+}
+/* =========================
+   NAVBAR
+========================= */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 30px;
+  margin-bottom:30px;
+  border-radius:18px;
+
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(12px);
+
+  box-shadow:
+  0 10px 35px rgba(0,0,0,.35);
+}
+.logo{
+  font-size:28px;
+  font-weight:700;
+  color:#6366f1;
+}
+.logo span{
+  color:white;
+}
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+.icon{
+  width:45px;
+  height:45px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#1e293b;
+  cursor:pointer;
+  transition:.3s;
+}
+.icon:hover{
+  background:#6366f1;
+}
+.profile{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.profile img{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+}
+.profile h4{
+  font-size:15px;
+}
+.profile p{
+  font-size:12px;
+  color:#b8b8b8;
+}
+/* =========================
+ DASHBOARD
+========================= */
+.dashboard{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px; 
+  margin-bottom:40px;
+}
+.card{
+  background:#1e293b;
+  border-radius:20px;
+  padding:25px;
+
+  transition:.35s;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.35);
+}
+.card:hover{
+  transform:translateY(-8px);
+}
+.card h3{
+  font-size:16px;
+  color:#d7d7d7;
+}
+.card h1{
+  margin-top:15px;
+  font-size:34px;
+}
+.card.blue{
+  border-left:6px solid #6366f1;
+}
+.card.green{
+  border-left:6px solid #22c55e;
+}
+.card.orange{
+  border-left:6px solid orange;
+}
+.card.red{
+  border-left:6px solid crimson;
+}
+/* =========================
+ SEARCH BAR
+========================= */
+.search-area{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+  gap:20px;
+}
+.search-box{
+  flex:1;
+}
+.search-box input{
+  width:100%;
+  padding:15px 20px;
+  border:none;
+  border-radius:14px;
+  outline:none;
+  font-size:15px;
+
+  background:#1e293b;
+  color:white;
+}
+.search-box input::placeholder{
+  color:#9ca3af;
+}
+.add-btn{
+  padding:15px 25px;
+  border:none;
+  border-radius:14px;
+  cursor:pointer;
+  color:white;
+  font-size:15px;
+  font-weight:600;
+
+  background:linear-gradient(
+  45deg,
+  #6366f1,
+  #8b5cf6);
+
+  transition:.3s;
+}
+.add-btn:hover{
+  transform:scale(1.05);
+}
+/* =========================
+ EMPLOYEE GRID
+========================= */
+.employee-grid{
+
+  display:grid;
+
+  grid-template-columns:
+
+  repeat(auto-fit,minmax(280px,1fr));
+
+  gap:25px;
+
+}
+/* =========================
+ EMPLOYEE CARD
+========================= */
+.employee-card{
+
+  background:#1e293b;
+
+  border-radius:18px;
+
+  padding:25px;
+
+  transition:.35s;
+
+  box-shadow:
+
+  0 10px 25px rgba(0,0,0,.3);
+
+}
+.employee-card:hover{
+
+  transform:translateY(-10px);
+
+}
+.avatar{
+
+  width:80px;
+
+  height:80px;
+
+  border-radius:50%;
+
+  margin:auto;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  font-size:34px;
+
+  font-weight:bold;
+
+  background:
+
+  linear-gradient(
+
+  45deg,
+
+  #6366f1,
+
+  #8b5cf6);
+
+}
+.employee-card h2{
+
+  text-align:center;
+
+  margin-top:18px;
+
+}
+.employee-card h4{
+
+  text-align:center;
+
+  margin-top:5px;
+
+  color:#c5c5c5;
+
+  font-weight:400;
+
+}
+.info{
+
+  margin-top:20px;
+
+}
+.info p{
+
+  margin:10px 0;
+
+  color:#d9d9d9;
+
+}
+/* ==========================
+   EMPLOYEE FORM
+========================== */
+.employee-form {
+  margin: 30px 0;
+  padding: 30px;
+  background: rgba(30, 41, 59, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.employee-form h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+.form-group input,
+.form-group select {
+  padding: 14px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background: #0f172a;
+  color: white;
+  font-size: 15px;
+}
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+.submit-btn {
+  margin-top: 25px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(45deg,#22c55e,#16a34a);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .3s;
+}
+.submit-btn:hover {
+  transform: scale(1.05);
+}
+/* ==========================
+   EMPLOYEE CARD DETAILS
+========================== */
+.employee-card .info {
+  margin-top: 20px;
+}
+.employee-card .info p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.employee-card .info strong {
+  color: #60a5fa;
+}
+/* ==========================
+   ACTION BUTTONS
+========================== */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.edit-btn,
+.delete-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  border-radius: 10px;
+  transition: .3s;
+}
+.edit-btn {
+  margin-right: 10px;
+  background: linear-gradient(45deg,#3b82f6,#2563eb);
+}
+.delete-btn {
+  background: linear-gradient(45deg,#ef4444,#dc2626);
+}
+.edit-btn:hover,
+.delete-btn:hover {
+  transform: translateY(-3px);
+}
+/* ==========================
+   EMPTY MESSAGE
+========================== */
+.empty {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 18px;
+  padding: 40px;
+}
+/* ==========================
+   SCROLLBAR
+========================== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+/* ==========================
+   ANIMATIONS
+========================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.employee-card,
+.card,
+.employee-form {
+  animation: fadeUp .6s ease;
+}
+/* ==========================
+   RESPONSIVE
+========================== */
+@media(max-width:1100px){
+
+.dashboard{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+@media(max-width:768px){
+
+.app{
+width:95%;
+}
+
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+
+.search-area{
+flex-direction:column;
+}
+
+.form-grid{
+grid-template-columns:1fr;
+}
+
+.dashboard{
+grid-template-columns:1fr;
+}
+
+.employee-grid{
+grid-template-columns:1fr;
+}
+
+.actions{
+flex-direction:column;
+gap:10px;
+}
+
+.edit-btn{
+margin-right:0;
+}
+
+}
+@media(max-width:500px){
+
+.logo{
+font-size:22px;
+}
+
+.card h1{
+font-size:28px;
+}
+
+.employee-card{
+padding:20px;
+}
+
+.avatar{
+width:70px;
+height:70px;
+font-size:28px;
+}
+
+.submit-btn,
+.add-btn{
+width:100%;
+}
+
+}
+.loading {
+  text-align: center;
+  font-size: 20px;
+  margin: 40px 0;
+  color: #6366f1;
+  font-weight: 500;
+}
+.error-message {
+  text-align: center;
+  font-size: 18px;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+/* ==========================
+   LOGIN PAGE
+========================== */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #6366f1;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.login-header h2 span {
+  color: #fff;
+}
+.login-header p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+.login-tabs {
+  display: flex;
+  background: #0f172a;
+  padding: 6px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.tab-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tab-btn.active {
+  background: #6366f1;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+.login-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+.login-error {
+  background: rgba(239, 68, 68, 0.15);
+  border-left: 4px solid #ef4444;
+  color: #fca5a5;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: left;
+}
+.login-submit-btn {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+.login-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+/* ==========================
+   PROFILE VIEW
+========================== */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.profile-card-large {
+  width: 100%;
+  max-width: 580px;
+  background: #1e293b;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: left;
+}
+.profile-header-large {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.avatar-large {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+.profile-header-large h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.profile-role {
+  font-size: 16px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+.profile-dept {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #0f172a;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+.detail-item .label {
+  color: #94a3b8;
+  font-size: 14px;
+}
+.detail-item .value {
+  color: #f8fafc;
+  font-size: 15px;
+  font-weight: 600;
+}
+.profile-edit-btn {
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #3b82f6, #2563eb);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+.profile-edit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+.profile-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile-form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.profile-form-actions .save-btn {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #10b981, #059669);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.profile-form-actions .cancel-btn {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #334155;
+  color: #e2e8f0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.profile-form-actions .save-btn:hover,
+.profile-form-actions .cancel-btn:hover {
+  transform: translateY(-2px);
+}
+/* ==========================
+   LOGOUT BUTTON IN NAVBAR
+========================== */
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.logout-btn:hover {
+  background: #ef4444;
+  color: white;
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+.logout-btn svg {
+  font-size: 16px;
+}
+/* ==========================
+   TAB NAVIGATION SYSTEM
+========================== */
+.tab-navigation {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  background: rgba(30, 41, 59, 0.4);
+  padding: 8px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  width: fit-content;
+}
+.nav-tab-btn {
+  padding: 10px 24px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nav-tab-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+.nav-tab-btn.active {
+  background: #6366f1;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+}
+/* ==========================
+   LEAVE REQUEST SYSTEM
+========================== */
+.leave-requests-container {
+  animation: fadeUp 0.6s ease;
+}
+.leave-grid-layout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+.leave-card-form, 
+.leave-history,
+.leave-admin-panel {
+  background: #1e293b;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.leave-card-form h2,
+.leave-history h2,
+.leave-admin-panel h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 12px;
+  text-align: left;
+}
+.leave-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.leave-form-fields textarea {
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #0f172a;
+  color: white;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+.apply-btn {
+  margin-top: 10px;
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  width: 100%;
+}
+/* Leaves Table */
+.leave-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.leave-table th,
+.leave-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+}
+.leave-table th {
+  background: #0f172a;
+  color: #94a3b8;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.leave-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+.leave-table tbody tr:last-child {
+  border-bottom: none;
+}
+/* Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+.status-badge.pending {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+.status-badge.approved {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+.status-badge.rejected {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+.mgr-comment {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 4px;
+  font-style: italic;
+}
+.text-muted {
+  color: #64748b;
+  font-style: italic;
+  font-size: 13px;
+}
+/* Admin Leaves Management controls */
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+.approve-action-btn,
+.reject-action-btn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.approve-action-btn {
+  background: linear-gradient(45deg, #10b981, #059669);
+}
+.reject-action-btn {
+  background: linear-gradient(45deg, #ef4444, #dc2626);
+}
+.approve-action-btn:hover,
+.reject-action-btn:hover {
+  transform: translateY(-2px);
+}
+/* Review inline inputs */
+.review-inline-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 250px;
+}
+.review-inline-form input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: #0f172a;
+  color: white;
+  font-size: 13px;
+}
+.review-actions {
+  display: flex;
+  gap: 8px;
+}
+.save-btn-small,
+.cancel-btn-small {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+.save-btn-small {
+  background: #6366f1;
+}
+.cancel-btn-small {
+  background: #475569;
+}
+.save-btn-small:hover,
+.cancel-btn-small:hover {
+  transform: translateY(-1px);
+}
+@media(max-width: 1024px) {
+  .leave-grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style></head>
+  <body>
+    <div id="root"><div class="login-container"><div class="login-card"><div class="login-header"><h2>Employee<span>Hub</span></h2><p>Please log in to access your portal</p></div><div class="login-tabs"><button type="button" class="tab-btn active">Admin Login</button><button type="button" class="tab-btn ">Employee Login</button></div><form class="login-form-fields"><div class="form-group"><label>Email Address</label><input placeholder="admin@admin.com" required="" type="text" value="" name="email"></div><div class="form-group"><label>Password</label><input placeholder="admin123" required="" type="password" value="" name="password"></div><button type="submit" class="login-submit-btn">Login</button></form><div class="demo-credentials" style="margin-top: 20px; padding: 15px; background: rgba(255, 255, 255, 0.03); border-radius: 10px; font-size: 13px; color: rgb(148, 163, 184); border: 1px solid rgba(255, 255, 255, 0.05); text-align: left;"><strong style="color: rgb(255, 255, 255); display: block; margin-bottom: 8px;">Demo Credentials:</strong><div><p style="margin: 3px 0px;"><strong>Email:</strong> admin@admin.com</p><p style="margin: 3px 0px;"><strong>Password:</strong> admin123</p></div></div></div></div></div>
+    <script type="module" src="/src/main.jsx"></script>
+  
+
+</body></html>
+==================================================
+]]></system-out>
+    <system-err><![CDATA[Warning: Frontend server did not start within 15 seconds. Test might fail.
+Jul 18, 2026 4:46:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 150, returning the closest version; found: 149; Please update to a Selenium version that supports CDP version 150
+]]></system-err>
+  </testcase>
+  <testcase name="testEmployeeCRUDAndSearchFlow" classname="com.employee.automation.EmployeeAutomationTest" time="12.342">
+    <system-out><![CDATA[Step 0: Login page loaded successfully.
+[OPERATION LOGGED] Navigate to Login Page - Status: SUCCESS - Details: Loaded login page successfully
+Step 1: Logged in and navigated to Employee Manager successfully.
+[OPERATION LOGGED] Admin Login - Status: SUCCESS - Details: Logged in as admin@admin.com
+Step 2: Adding employee: Auto Tester 07653
+Step 3: Verifying employee card added...
+[OPERATION LOGGED] Add Employee - Status: SUCCESS - Details: Added employee: Auto Tester 07653 (IT, QA Automation Engineer)
+Step 4: Testing search functionality...
+[OPERATION LOGGED] Search Employee - Status: SUCCESS - Details: Searched and found matching card for: Auto Tester 07653
+[OPERATION LOGGED] Search Non-Existent Employee - Status: SUCCESS - Details: Confirmed card is hidden for query: NonExistentNameXYZ123
+Step 5: Editing employee...
+[OPERATION LOGGED] Edit Employee - Status: SUCCESS - Details: Edited employee details. New Name: Auto Tester 07653 (Updated), Dept: Finance, Pos: Lead E2E Engineer
+Step 6: Deleting employee...
+[OPERATION LOGGED] Delete Employee - Status: SUCCESS - Details: Deleted employee: Auto Tester 07653 (Updated)
+E2E Automation test completed successfully!
+==================================================
+DIAGNOSTIC: Page Source on TearDown:
+<html lang="en"><head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react-employeemanagement</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/SANJAY M/Desktop/placement tra-2/day11/EmployeeManager/react-employeemanagement/src/index.css">:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/SANJAY M/Desktop/placement tra-2/day11/EmployeeManager/react-employeemanagement/src/App.css">
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* Google Font */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+body{
+  background:#0f172a;
+  color:#fff;
+}
+.app{
+  width:90%;
+  max-width:1400px;
+  margin:auto;
+  padding:30px 0;
+}
+/* =========================
+   NAVBAR
+========================= */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 30px;
+  margin-bottom:30px;
+  border-radius:18px;
+
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(12px);
+
+  box-shadow:
+  0 10px 35px rgba(0,0,0,.35);
+}
+.logo{
+  font-size:28px;
+  font-weight:700;
+  color:#6366f1;
+}
+.logo span{
+  color:white;
+}
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+.icon{
+  width:45px;
+  height:45px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#1e293b;
+  cursor:pointer;
+  transition:.3s;
+}
+.icon:hover{
+  background:#6366f1;
+}
+.profile{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.profile img{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+}
+.profile h4{
+  font-size:15px;
+}
+.profile p{
+  font-size:12px;
+  color:#b8b8b8;
+}
+/* =========================
+ DASHBOARD
+========================= */
+.dashboard{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px; 
+  margin-bottom:40px;
+}
+.card{
+  background:#1e293b;
+  border-radius:20px;
+  padding:25px;
+
+  transition:.35s;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.35);
+}
+.card:hover{
+  transform:translateY(-8px);
+}
+.card h3{
+  font-size:16px;
+  color:#d7d7d7;
+}
+.card h1{
+  margin-top:15px;
+  font-size:34px;
+}
+.card.blue{
+  border-left:6px solid #6366f1;
+}
+.card.green{
+  border-left:6px solid #22c55e;
+}
+.card.orange{
+  border-left:6px solid orange;
+}
+.card.red{
+  border-left:6px solid crimson;
+}
+/* =========================
+ SEARCH BAR
+========================= */
+.search-area{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+  gap:20px;
+}
+.search-box{
+  flex:1;
+}
+.search-box input{
+  width:100%;
+  padding:15px 20px;
+  border:none;
+  border-radius:14px;
+  outline:none;
+  font-size:15px;
+
+  background:#1e293b;
+  color:white;
+}
+.search-box input::placeholder{
+  color:#9ca3af;
+}
+.add-btn{
+  padding:15px 25px;
+  border:none;
+  border-radius:14px;
+  cursor:pointer;
+  color:white;
+  font-size:15px;
+  font-weight:600;
+
+  background:linear-gradient(
+  45deg,
+  #6366f1,
+  #8b5cf6);
+
+  transition:.3s;
+}
+.add-btn:hover{
+  transform:scale(1.05);
+}
+/* =========================
+ EMPLOYEE GRID
+========================= */
+.employee-grid{
+
+  display:grid;
+
+  grid-template-columns:
+
+  repeat(auto-fit,minmax(280px,1fr));
+
+  gap:25px;
+
+}
+/* =========================
+ EMPLOYEE CARD
+========================= */
+.employee-card{
+
+  background:#1e293b;
+
+  border-radius:18px;
+
+  padding:25px;
+
+  transition:.35s;
+
+  box-shadow:
+
+  0 10px 25px rgba(0,0,0,.3);
+
+}
+.employee-card:hover{
+
+  transform:translateY(-10px);
+
+}
+.avatar{
+
+  width:80px;
+
+  height:80px;
+
+  border-radius:50%;
+
+  margin:auto;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  font-size:34px;
+
+  font-weight:bold;
+
+  background:
+
+  linear-gradient(
+
+  45deg,
+
+  #6366f1,
+
+  #8b5cf6);
+
+}
+.employee-card h2{
+
+  text-align:center;
+
+  margin-top:18px;
+
+}
+.employee-card h4{
+
+  text-align:center;
+
+  margin-top:5px;
+
+  color:#c5c5c5;
+
+  font-weight:400;
+
+}
+.info{
+
+  margin-top:20px;
+
+}
+.info p{
+
+  margin:10px 0;
+
+  color:#d9d9d9;
+
+}
+/* ==========================
+   EMPLOYEE FORM
+========================== */
+.employee-form {
+  margin: 30px 0;
+  padding: 30px;
+  background: rgba(30, 41, 59, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.employee-form h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+.form-group input,
+.form-group select {
+  padding: 14px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background: #0f172a;
+  color: white;
+  font-size: 15px;
+}
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+.submit-btn {
+  margin-top: 25px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(45deg,#22c55e,#16a34a);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .3s;
+}
+.submit-btn:hover {
+  transform: scale(1.05);
+}
+/* ==========================
+   EMPLOYEE CARD DETAILS
+========================== */
+.employee-card .info {
+  margin-top: 20px;
+}
+.employee-card .info p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.employee-card .info strong {
+  color: #60a5fa;
+}
+/* ==========================
+   ACTION BUTTONS
+========================== */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.edit-btn,
+.delete-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  border-radius: 10px;
+  transition: .3s;
+}
+.edit-btn {
+  margin-right: 10px;
+  background: linear-gradient(45deg,#3b82f6,#2563eb);
+}
+.delete-btn {
+  background: linear-gradient(45deg,#ef4444,#dc2626);
+}
+.edit-btn:hover,
+.delete-btn:hover {
+  transform: translateY(-3px);
+}
+/* ==========================
+   EMPTY MESSAGE
+========================== */
+.empty {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 18px;
+  padding: 40px;
+}
+/* ==========================
+   SCROLLBAR
+========================== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+/* ==========================
+   ANIMATIONS
+========================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.employee-card,
+.card,
+.employee-form {
+  animation: fadeUp .6s ease;
+}
+/* ==========================
+   RESPONSIVE
+========================== */
+@media(max-width:1100px){
+
+.dashboard{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+@media(max-width:768px){
+
+.app{
+width:95%;
+}
+
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+
+.search-area{
+flex-direction:column;
+}
+
+.form-grid{
+grid-template-columns:1fr;
+}
+
+.dashboard{
+grid-template-columns:1fr;
+}
+
+.employee-grid{
+grid-template-columns:1fr;
+}
+
+.actions{
+flex-direction:column;
+gap:10px;
+}
+
+.edit-btn{
+margin-right:0;
+}
+
+}
+@media(max-width:500px){
+
+.logo{
+font-size:22px;
+}
+
+.card h1{
+font-size:28px;
+}
+
+.employee-card{
+padding:20px;
+}
+
+.avatar{
+width:70px;
+height:70px;
+font-size:28px;
+}
+
+.submit-btn,
+.add-btn{
+width:100%;
+}
+
+}
+.loading {
+  text-align: center;
+  font-size: 20px;
+  margin: 40px 0;
+  color: #6366f1;
+  font-weight: 500;
+}
+.error-message {
+  text-align: center;
+  font-size: 18px;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+/* ==========================
+   LOGIN PAGE
+========================== */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #6366f1;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.login-header h2 span {
+  color: #fff;
+}
+.login-header p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+.login-tabs {
+  display: flex;
+  background: #0f172a;
+  padding: 6px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.tab-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tab-btn.active {
+  background: #6366f1;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+.login-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+.login-error {
+  background: rgba(239, 68, 68, 0.15);
+  border-left: 4px solid #ef4444;
+  color: #fca5a5;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: left;
+}
+.login-submit-btn {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+.login-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+/* ==========================
+   PROFILE VIEW
+========================== */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.profile-card-large {
+  width: 100%;
+  max-width: 580px;
+  background: #1e293b;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: left;
+}
+.profile-header-large {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.avatar-large {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+.profile-header-large h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.profile-role {
+  font-size: 16px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+.profile-dept {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #0f172a;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+.detail-item .label {
+  color: #94a3b8;
+  font-size: 14px;
+}
+.detail-item .value {
+  color: #f8fafc;
+  font-size: 15px;
+  font-weight: 600;
+}
+.profile-edit-btn {
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #3b82f6, #2563eb);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+.profile-edit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+.profile-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile-form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.profile-form-actions .save-btn {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #10b981, #059669);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.profile-form-actions .cancel-btn {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #334155;
+  color: #e2e8f0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.profile-form-actions .save-btn:hover,
+.profile-form-actions .cancel-btn:hover {
+  transform: translateY(-2px);
+}
+/* ==========================
+   LOGOUT BUTTON IN NAVBAR
+========================== */
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.logout-btn:hover {
+  background: #ef4444;
+  color: white;
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+.logout-btn svg {
+  font-size: 16px;
+}
+/* ==========================
+   TAB NAVIGATION SYSTEM
+========================== */
+.tab-navigation {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  background: rgba(30, 41, 59, 0.4);
+  padding: 8px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  width: fit-content;
+}
+.nav-tab-btn {
+  padding: 10px 24px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nav-tab-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+.nav-tab-btn.active {
+  background: #6366f1;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+}
+/* ==========================
+   LEAVE REQUEST SYSTEM
+========================== */
+.leave-requests-container {
+  animation: fadeUp 0.6s ease;
+}
+.leave-grid-layout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+.leave-card-form, 
+.leave-history,
+.leave-admin-panel {
+  background: #1e293b;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.leave-card-form h2,
+.leave-history h2,
+.leave-admin-panel h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 12px;
+  text-align: left;
+}
+.leave-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.leave-form-fields textarea {
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #0f172a;
+  color: white;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+.apply-btn {
+  margin-top: 10px;
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  width: 100%;
+}
+/* Leaves Table */
+.leave-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.leave-table th,
+.leave-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+}
+.leave-table th {
+  background: #0f172a;
+  color: #94a3b8;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.leave-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+.leave-table tbody tr:last-child {
+  border-bottom: none;
+}
+/* Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+.status-badge.pending {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+.status-badge.approved {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+.status-badge.rejected {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+.mgr-comment {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 4px;
+  font-style: italic;
+}
+.text-muted {
+  color: #64748b;
+  font-style: italic;
+  font-size: 13px;
+}
+/* Admin Leaves Management controls */
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+.approve-action-btn,
+.reject-action-btn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.approve-action-btn {
+  background: linear-gradient(45deg, #10b981, #059669);
+}
+.reject-action-btn {
+  background: linear-gradient(45deg, #ef4444, #dc2626);
+}
+.approve-action-btn:hover,
+.reject-action-btn:hover {
+  transform: translateY(-2px);
+}
+/* Review inline inputs */
+.review-inline-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 250px;
+}
+.review-inline-form input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: #0f172a;
+  color: white;
+  font-size: 13px;
+}
+.review-actions {
+  display: flex;
+  gap: 8px;
+}
+.save-btn-small,
+.cancel-btn-small {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+.save-btn-small {
+  background: #6366f1;
+}
+.cancel-btn-small {
+  background: #475569;
+}
+.save-btn-small:hover,
+.cancel-btn-small:hover {
+  transform: translateY(-1px);
+}
+@media(max-width: 1024px) {
+  .leave-grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style></head>
+  <body>
+    <div id="root"><div class="app"><nav class="navbar"><div class="logo">Employee<span>Hub</span></div><div class="nav-right"><div class="icon" title="Notifications"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path></svg></div><div class="profile"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="40" width="40" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg><div><h4>Admin</h4><p>HR Manager</p></div></div><button class="logout-btn" title="Logout"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z"></path></svg><span>Logout</span></button></div></nav><div class="tab-navigation"><button class="nav-tab-btn active">Employee Directory</button><button class="nav-tab-btn ">Leave Requests</button></div><div class="tab-content"><div class="dashboard"><div class="card blue"><h3>Total Employees</h3><h1>52</h1></div><div class="card green"><h3>Departments</h3><h1>46</h1></div><div class="card orange"><h3>Total Salary</h3><h1>₹399,000</h1></div><div class="card red"><h3>Active Employees</h3><h1>52</h1></div></div><div class="search-area"><div class="search-box"><input placeholder="🔍 Search employee by name..." type="text" value=""></div><button class="add-btn">+ Add Employee</button></div><form class="employee-form"><h2>Add New Employee</h2><div class="form-grid"><div class="form-group"><label>Employee Name</label><input placeholder="Enter employee name" type="text" value="" name="name"></div><div class="form-group"><label>Position</label><input placeholder="Software Engineer" type="text" value="" name="position"></div><div class="form-group"><label>Department</label><select name="department"><option value="">Select Department</option><option value="IT">IT</option><option value="HR">HR</option><option value="Design">Design</option><option value="Finance">Finance</option><option value="Marketing">Marketing</option></select></div><div class="form-group"><label>Email</label><input placeholder="employee@email.com" type="email" value="" name="email"></div><div class="form-group"><label>Phone</label><input placeholder="9876543210" type="text" value="" name="phone"></div><div class="form-group"><label>Salary</label><input placeholder="50000" type="number" value="" name="salary"></div></div><button type="submit" class="submit-btn">Add Employee</button></form><div class="employee-grid"><div class="employee-card"><div class="avatar">R</div><h2>ram kumar</h2><h4>developer</h4><div class="info"><p><strong>Department:</strong> Design</p><p><strong>Email:</strong> 720823108011@hit.edu.in</p><p><strong>Phone:</strong> 4538376469</p><p><strong>Salary:</strong> ₹10,000</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">S</div><h2>sanjay</h2><h4>software engineer</h4><div class="info"><p><strong>Department:</strong> IT</p><p><strong>Email:</strong> 720823108045@hit.edu.in</p><p><strong>Phone:</strong> 8838213372</p><p><strong>Salary:</strong> ₹56,000</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">R</div><h2>ravi</h2><h4>software engineer</h4><div class="info"><p><strong>Department:</strong> HR</p><p><strong>Email:</strong> 720823108037@hit.edu.in</p><p><strong>Phone:</strong> 1237469943</p><p><strong>Salary:</strong> ₹25,000</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">R</div><h2>rishi</h2><h4>developer</h4><div class="info"><p><strong>Department:</strong> Marketing</p><p><strong>Email:</strong> 720823108038@hit.edu.in</p><p><strong>Phone:</strong> 6759034457</p><p><strong>Salary:</strong> ₹50,000</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T22:49:54.187Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/44.jpg</p><p><strong>Email:</strong> Owen Frami</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T22:15:01.676Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/56.jpg</p><p><strong>Email:</strong> Samuel Cummings-O'Connell</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T17:20:41.889Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/77.jpg</p><p><strong>Email:</strong> Victor Marks II</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T06:28:05.072Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/4584551</p><p><strong>Email:</strong> Terrance Swaniawski I</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T14:33:07.692Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/60.jpg</p><p><strong>Email:</strong> Tami Kassulke</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-06T02:23:29.370Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/50.jpg</p><p><strong>Email:</strong> Dean Klocko V</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T22:54:37.466Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/57982172</p><p><strong>Email:</strong> Wilbur Lynch</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-06T02:56:04.410Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/48.jpg</p><p><strong>Email:</strong> Kathryn Toy</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-06T02:36:50.276Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/85.jpg</p><p><strong>Email:</strong> Faith Towne</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T22:48:33.109Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/78.jpg</p><p><strong>Email:</strong> Whitney Roob</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-06T02:25:40.012Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/88990743</p><p><strong>Email:</strong> Harriet Klein</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T23:04:14.455Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/72.jpg</p><p><strong>Email:</strong> Mr. Bryant Lebsack III</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T05:35:26.515Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/99.jpg</p><p><strong>Email:</strong> Lynette Hyatt</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T19:38:58.367Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/82049944</p><p><strong>Email:</strong> Miss Lori Zulauf</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-06T01:17:13.696Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/35.jpg</p><p><strong>Email:</strong> Ervin Hills</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T14:11:22.302Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/83.jpg</p><p><strong>Email:</strong> Mrs. Joanna Wuckert</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T11:31:17.911Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/28346343</p><p><strong>Email:</strong> Mrs. Mona Stroman</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T23:34:52.775Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/31576590</p><p><strong>Email:</strong> Agnes Kuhic</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T18:18:14.496Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/82.jpg</p><p><strong>Email:</strong> Ms. Judith Flatley</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T08:46:09.125Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/78682194</p><p><strong>Email:</strong> Julius Powlowski</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T05:15:03.728Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/28252823</p><p><strong>Email:</strong> Ms. Lorene Predovic MD</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-06T02:09:23.112Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/85.jpg</p><p><strong>Email:</strong> Colleen Kessler</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T19:43:10.078Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/64199225</p><p><strong>Email:</strong> Saul Renner</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T16:27:10.598Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/68744025</p><p><strong>Email:</strong> Dustin Runte PhD</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-06T04:10:52.273Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/92.jpg</p><p><strong>Email:</strong> Darla Prohaska</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T15:46:43.279Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/96.jpg</p><p><strong>Email:</strong> Rebecca Runolfsdottir</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T21:28:50.766Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/53.jpg</p><p><strong>Email:</strong> Wesley King</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T06:53:13.271Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/24.jpg</p><p><strong>Email:</strong> Louis Gusikowski</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-06T04:29:16.305Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/73.jpg</p><p><strong>Email:</strong> Kelvin Torp</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-06T03:30:05.273Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/94.jpg</p><p><strong>Email:</strong> Dominic Towne</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T21:19:08.171Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/64.jpg</p><p><strong>Email:</strong> Frederick Casper</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T15:56:40.639Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/93135362</p><p><strong>Email:</strong> Kristy Oberbrunner</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T09:01:26.759Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/41.jpg</p><p><strong>Email:</strong> Mrs. Marlene Schumm</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T22:41:19.677Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/65.jpg</p><p><strong>Email:</strong> Susie Ruecker</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T10:13:19.042Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/96192674</p><p><strong>Email:</strong> Jeffery Lang</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-05T05:15:30.319Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/45320162</p><p><strong>Email:</strong> Alton Larkin</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-06T02:39:56.445Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/73.jpg</p><p><strong>Email:</strong> Shelley Beahan</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-10T01:22:36.780Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/24785965</p><p><strong>Email:</strong> Darin Gerhold</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-10T05:52:51.480Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/73.jpg</p><p><strong>Email:</strong> Jerry Tromp</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-09T22:25:23.005Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/92.jpg</p><p><strong>Email:</strong> Kristin Brakus DVM</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-09T16:20:45.934Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/31.jpg</p><p><strong>Email:</strong> Tony Heathcote</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-09T11:06:32.387Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/65.jpg</p><p><strong>Email:</strong> Dr. Clyde Zboncak</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-17T18:36:52.035Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/44.jpg</p><p><strong>Email:</strong> Ray Boyer</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-18T03:10:54.890Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/48.jpg</p><p><strong>Email:</strong> Isabel Crooks</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">2</div><h2>2026-07-17T23:52:54.335Z</h2><h4></h4><div class="info"><p><strong>Department:</strong> https://avatars.githubusercontent.com/u/75989513</p><p><strong>Email:</strong> Anne Goldner</p><p><strong>Phone:</strong> </p><p><strong>Salary:</strong> ₹0</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">R</div><h2>Rekish</h2><h4>develpor</h4><div class="info"><p><strong>Department:</strong> IT</p><p><strong>Email:</strong> 720823108035@hit.edu.in</p><p><strong>Phone:</strong> 2345678654</p><p><strong>Salary:</strong> ₹60,000</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">B</div><h2>Build Tester 28657</h2><h4>Build Automation Specialist</h4><div class="info"><p><strong>Department:</strong> IT</p><p><strong>Email:</strong> build.tester28657@example.com</p><p><strong>Phone:</strong> 12345628657</p><p><strong>Salary:</strong> ₹99,000</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div><div class="employee-card"><div class="avatar">B</div><h2>Build Tester 76778</h2><h4>Build Automation Specialist</h4><div class="info"><p><strong>Department:</strong> IT</p><p><strong>Email:</strong> build.tester76778@example.com</p><p><strong>Phone:</strong> 12345676778</p><p><strong>Salary:</strong> ₹99,000</p></div><div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></div></div></div></div></div>
+    <script type="module" src="/src/main.jsx"></script>
+  
+
+</body></html>
+==================================================
+]]></system-out>
+    <system-err><![CDATA[Jul 18, 2026 4:46:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 150, returning the closest version; found: 149; Please update to a Selenium version that supports CDP version 150
+]]></system-err>
+  </testcase>
+  <testcase name="testEmployeeLoginAndProfileFlow" classname="com.employee.automation.EmployeeAutomationTest" time="4.718">
+    <system-out><![CDATA[Step 0: Login page loaded successfully.
+[OPERATION LOGGED] Navigate to Login Page - Status: SUCCESS - Details: Loaded login page successfully
+Step 1: Logged in successfully as Employee.
+[OPERATION LOGGED] Employee Login - Status: SUCCESS - Details: Logged in as ram kumar (720823108011@hit.edu.in)
+Step 2: Employee contact details updated successfully.
+[OPERATION LOGGED] Update Employee Profile - Status: SUCCESS - Details: Updated contact phone number to 4538376469
+Step 3: Logged out successfully.
+[OPERATION LOGGED] Employee Logout - Status: SUCCESS - Details: Logged out from employee account
+==================================================
+DIAGNOSTIC: Page Source on TearDown:
+<html lang="en"><head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react-employeemanagement</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/SANJAY M/Desktop/placement tra-2/day11/EmployeeManager/react-employeemanagement/src/index.css">:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/SANJAY M/Desktop/placement tra-2/day11/EmployeeManager/react-employeemanagement/src/App.css">
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* Google Font */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+body{
+  background:#0f172a;
+  color:#fff;
+}
+.app{
+  width:90%;
+  max-width:1400px;
+  margin:auto;
+  padding:30px 0;
+}
+/* =========================
+   NAVBAR
+========================= */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 30px;
+  margin-bottom:30px;
+  border-radius:18px;
+
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(12px);
+
+  box-shadow:
+  0 10px 35px rgba(0,0,0,.35);
+}
+.logo{
+  font-size:28px;
+  font-weight:700;
+  color:#6366f1;
+}
+.logo span{
+  color:white;
+}
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+.icon{
+  width:45px;
+  height:45px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#1e293b;
+  cursor:pointer;
+  transition:.3s;
+}
+.icon:hover{
+  background:#6366f1;
+}
+.profile{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.profile img{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+}
+.profile h4{
+  font-size:15px;
+}
+.profile p{
+  font-size:12px;
+  color:#b8b8b8;
+}
+/* =========================
+ DASHBOARD
+========================= */
+.dashboard{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px; 
+  margin-bottom:40px;
+}
+.card{
+  background:#1e293b;
+  border-radius:20px;
+  padding:25px;
+
+  transition:.35s;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.35);
+}
+.card:hover{
+  transform:translateY(-8px);
+}
+.card h3{
+  font-size:16px;
+  color:#d7d7d7;
+}
+.card h1{
+  margin-top:15px;
+  font-size:34px;
+}
+.card.blue{
+  border-left:6px solid #6366f1;
+}
+.card.green{
+  border-left:6px solid #22c55e;
+}
+.card.orange{
+  border-left:6px solid orange;
+}
+.card.red{
+  border-left:6px solid crimson;
+}
+/* =========================
+ SEARCH BAR
+========================= */
+.search-area{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+  gap:20px;
+}
+.search-box{
+  flex:1;
+}
+.search-box input{
+  width:100%;
+  padding:15px 20px;
+  border:none;
+  border-radius:14px;
+  outline:none;
+  font-size:15px;
+
+  background:#1e293b;
+  color:white;
+}
+.search-box input::placeholder{
+  color:#9ca3af;
+}
+.add-btn{
+  padding:15px 25px;
+  border:none;
+  border-radius:14px;
+  cursor:pointer;
+  color:white;
+  font-size:15px;
+  font-weight:600;
+
+  background:linear-gradient(
+  45deg,
+  #6366f1,
+  #8b5cf6);
+
+  transition:.3s;
+}
+.add-btn:hover{
+  transform:scale(1.05);
+}
+/* =========================
+ EMPLOYEE GRID
+========================= */
+.employee-grid{
+
+  display:grid;
+
+  grid-template-columns:
+
+  repeat(auto-fit,minmax(280px,1fr));
+
+  gap:25px;
+
+}
+/* =========================
+ EMPLOYEE CARD
+========================= */
+.employee-card{
+
+  background:#1e293b;
+
+  border-radius:18px;
+
+  padding:25px;
+
+  transition:.35s;
+
+  box-shadow:
+
+  0 10px 25px rgba(0,0,0,.3);
+
+}
+.employee-card:hover{
+
+  transform:translateY(-10px);
+
+}
+.avatar{
+
+  width:80px;
+
+  height:80px;
+
+  border-radius:50%;
+
+  margin:auto;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  font-size:34px;
+
+  font-weight:bold;
+
+  background:
+
+  linear-gradient(
+
+  45deg,
+
+  #6366f1,
+
+  #8b5cf6);
+
+}
+.employee-card h2{
+
+  text-align:center;
+
+  margin-top:18px;
+
+}
+.employee-card h4{
+
+  text-align:center;
+
+  margin-top:5px;
+
+  color:#c5c5c5;
+
+  font-weight:400;
+
+}
+.info{
+
+  margin-top:20px;
+
+}
+.info p{
+
+  margin:10px 0;
+
+  color:#d9d9d9;
+
+}
+/* ==========================
+   EMPLOYEE FORM
+========================== */
+.employee-form {
+  margin: 30px 0;
+  padding: 30px;
+  background: rgba(30, 41, 59, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.employee-form h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+.form-group input,
+.form-group select {
+  padding: 14px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background: #0f172a;
+  color: white;
+  font-size: 15px;
+}
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+.submit-btn {
+  margin-top: 25px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(45deg,#22c55e,#16a34a);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .3s;
+}
+.submit-btn:hover {
+  transform: scale(1.05);
+}
+/* ==========================
+   EMPLOYEE CARD DETAILS
+========================== */
+.employee-card .info {
+  margin-top: 20px;
+}
+.employee-card .info p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.employee-card .info strong {
+  color: #60a5fa;
+}
+/* ==========================
+   ACTION BUTTONS
+========================== */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.edit-btn,
+.delete-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  border-radius: 10px;
+  transition: .3s;
+}
+.edit-btn {
+  margin-right: 10px;
+  background: linear-gradient(45deg,#3b82f6,#2563eb);
+}
+.delete-btn {
+  background: linear-gradient(45deg,#ef4444,#dc2626);
+}
+.edit-btn:hover,
+.delete-btn:hover {
+  transform: translateY(-3px);
+}
+/* ==========================
+   EMPTY MESSAGE
+========================== */
+.empty {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 18px;
+  padding: 40px;
+}
+/* ==========================
+   SCROLLBAR
+========================== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+/* ==========================
+   ANIMATIONS
+========================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.employee-card,
+.card,
+.employee-form {
+  animation: fadeUp .6s ease;
+}
+/* ==========================
+   RESPONSIVE
+========================== */
+@media(max-width:1100px){
+
+.dashboard{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+@media(max-width:768px){
+
+.app{
+width:95%;
+}
+
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+
+.search-area{
+flex-direction:column;
+}
+
+.form-grid{
+grid-template-columns:1fr;
+}
+
+.dashboard{
+grid-template-columns:1fr;
+}
+
+.employee-grid{
+grid-template-columns:1fr;
+}
+
+.actions{
+flex-direction:column;
+gap:10px;
+}
+
+.edit-btn{
+margin-right:0;
+}
+
+}
+@media(max-width:500px){
+
+.logo{
+font-size:22px;
+}
+
+.card h1{
+font-size:28px;
+}
+
+.employee-card{
+padding:20px;
+}
+
+.avatar{
+width:70px;
+height:70px;
+font-size:28px;
+}
+
+.submit-btn,
+.add-btn{
+width:100%;
+}
+
+}
+.loading {
+  text-align: center;
+  font-size: 20px;
+  margin: 40px 0;
+  color: #6366f1;
+  font-weight: 500;
+}
+.error-message {
+  text-align: center;
+  font-size: 18px;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+/* ==========================
+   LOGIN PAGE
+========================== */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #6366f1;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.login-header h2 span {
+  color: #fff;
+}
+.login-header p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+.login-tabs {
+  display: flex;
+  background: #0f172a;
+  padding: 6px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.tab-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tab-btn.active {
+  background: #6366f1;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+.login-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+.login-error {
+  background: rgba(239, 68, 68, 0.15);
+  border-left: 4px solid #ef4444;
+  color: #fca5a5;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: left;
+}
+.login-submit-btn {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+.login-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+/* ==========================
+   PROFILE VIEW
+========================== */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.profile-card-large {
+  width: 100%;
+  max-width: 580px;
+  background: #1e293b;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: left;
+}
+.profile-header-large {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.avatar-large {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+.profile-header-large h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.profile-role {
+  font-size: 16px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+.profile-dept {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #0f172a;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+.detail-item .label {
+  color: #94a3b8;
+  font-size: 14px;
+}
+.detail-item .value {
+  color: #f8fafc;
+  font-size: 15px;
+  font-weight: 600;
+}
+.profile-edit-btn {
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #3b82f6, #2563eb);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+.profile-edit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+.profile-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile-form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.profile-form-actions .save-btn {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #10b981, #059669);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.profile-form-actions .cancel-btn {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #334155;
+  color: #e2e8f0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.profile-form-actions .save-btn:hover,
+.profile-form-actions .cancel-btn:hover {
+  transform: translateY(-2px);
+}
+/* ==========================
+   LOGOUT BUTTON IN NAVBAR
+========================== */
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.logout-btn:hover {
+  background: #ef4444;
+  color: white;
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+.logout-btn svg {
+  font-size: 16px;
+}
+/* ==========================
+   TAB NAVIGATION SYSTEM
+========================== */
+.tab-navigation {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  background: rgba(30, 41, 59, 0.4);
+  padding: 8px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  width: fit-content;
+}
+.nav-tab-btn {
+  padding: 10px 24px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nav-tab-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+.nav-tab-btn.active {
+  background: #6366f1;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+}
+/* ==========================
+   LEAVE REQUEST SYSTEM
+========================== */
+.leave-requests-container {
+  animation: fadeUp 0.6s ease;
+}
+.leave-grid-layout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+.leave-card-form, 
+.leave-history,
+.leave-admin-panel {
+  background: #1e293b;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.leave-card-form h2,
+.leave-history h2,
+.leave-admin-panel h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 12px;
+  text-align: left;
+}
+.leave-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.leave-form-fields textarea {
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #0f172a;
+  color: white;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+.apply-btn {
+  margin-top: 10px;
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  width: 100%;
+}
+/* Leaves Table */
+.leave-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.leave-table th,
+.leave-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+}
+.leave-table th {
+  background: #0f172a;
+  color: #94a3b8;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.leave-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+.leave-table tbody tr:last-child {
+  border-bottom: none;
+}
+/* Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+.status-badge.pending {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+.status-badge.approved {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+.status-badge.rejected {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+.mgr-comment {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 4px;
+  font-style: italic;
+}
+.text-muted {
+  color: #64748b;
+  font-style: italic;
+  font-size: 13px;
+}
+/* Admin Leaves Management controls */
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+.approve-action-btn,
+.reject-action-btn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.approve-action-btn {
+  background: linear-gradient(45deg, #10b981, #059669);
+}
+.reject-action-btn {
+  background: linear-gradient(45deg, #ef4444, #dc2626);
+}
+.approve-action-btn:hover,
+.reject-action-btn:hover {
+  transform: translateY(-2px);
+}
+/* Review inline inputs */
+.review-inline-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 250px;
+}
+.review-inline-form input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: #0f172a;
+  color: white;
+  font-size: 13px;
+}
+.review-actions {
+  display: flex;
+  gap: 8px;
+}
+.save-btn-small,
+.cancel-btn-small {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+.save-btn-small {
+  background: #6366f1;
+}
+.cancel-btn-small {
+  background: #475569;
+}
+.save-btn-small:hover,
+.cancel-btn-small:hover {
+  transform: translateY(-1px);
+}
+@media(max-width: 1024px) {
+  .leave-grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style></head>
+  <body>
+    <div id="root"><div class="login-container"><div class="login-card"><div class="login-header"><h2>Employee<span>Hub</span></h2><p>Please log in to access your portal</p></div><div class="login-tabs"><button type="button" class="tab-btn active">Admin Login</button><button type="button" class="tab-btn ">Employee Login</button></div><form class="login-form-fields"><div class="form-group"><label>Email Address</label><input placeholder="admin@admin.com" required="" type="text" value="" name="email"></div><div class="form-group"><label>Password</label><input placeholder="admin123" required="" type="password" value="" name="password"></div><button type="submit" class="login-submit-btn">Login</button></form><div class="demo-credentials" style="margin-top: 20px; padding: 15px; background: rgba(255, 255, 255, 0.03); border-radius: 10px; font-size: 13px; color: rgb(148, 163, 184); border: 1px solid rgba(255, 255, 255, 0.05); text-align: left;"><strong style="color: rgb(255, 255, 255); display: block; margin-bottom: 8px;">Demo Credentials:</strong><div><p style="margin: 3px 0px;"><strong>Email:</strong> admin@admin.com</p><p style="margin: 3px 0px;"><strong>Password:</strong> admin123</p></div></div></div></div></div>
+    <script type="module" src="/src/main.jsx"></script>
+  
+
+</body></html>
+==================================================
+]]></system-out>
+    <system-err><![CDATA[Jul 18, 2026 4:46:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 150, returning the closest version; found: 149; Please update to a Selenium version that supports CDP version 150
+]]></system-err>
+  </testcase>
+</testsuite>

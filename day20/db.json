@@ -1,0 +1,177 @@
+[
+  {
+    "timestamp": "2026-07-18 16:46:16",
+    "testCase": "EmployeeManagementBasicTest",
+    "operation": "Navigate to Homepage",
+    "details": "Opened React app homepage successfully",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:16",
+    "testCase": "EmployeeManagementBasicTest",
+    "operation": "Admin Login",
+    "details": "Logged in as admin@admin.com",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:20",
+    "testCase": "EmployeeManagementBasicTest",
+    "operation": "Add Employee",
+    "details": "Added employee: Build Tester 76778 (IT)",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:20",
+    "testCase": "EmployeeManagementBasicTest",
+    "operation": "Close Browser",
+    "details": "Selenium test finished and browser closed",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:38",
+    "testCase": "LeaveRequestWorkflow",
+    "operation": "Navigate to Login Page",
+    "details": "Loaded login page successfully",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:39",
+    "testCase": "LeaveRequestWorkflow",
+    "operation": "Employee Login",
+    "details": "Logged in as ram kumar (720823108011@hit.edu.in)",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:40",
+    "testCase": "LeaveRequestWorkflow",
+    "operation": "Apply Leave Request",
+    "details": "Applied for Casual Leave from 2026-07-20 to 2026-07-22. Reason: Family Function",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:40",
+    "testCase": "LeaveRequestWorkflow",
+    "operation": "Employee Logout",
+    "details": "Logged out from employee account",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:41",
+    "testCase": "LeaveRequestWorkflow",
+    "operation": "Admin Login",
+    "details": "Logged in as admin@admin.com",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:43",
+    "testCase": "LeaveRequestWorkflow",
+    "operation": "Admin Approve Leave",
+    "details": "Approved Casual Leave request for ram kumar",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:43",
+    "testCase": "LeaveRequestWorkflow",
+    "operation": "Admin Logout",
+    "details": "Logged out from admin account",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:44",
+    "testCase": "LeaveRequestWorkflow",
+    "operation": "Employee Login",
+    "details": "Logged in as ram kumar (720823108011@hit.edu.in) to verify status",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:45",
+    "testCase": "LeaveRequestWorkflow",
+    "operation": "Verify Leave Status",
+    "details": "Verified leave request is Approved with comment: \u0027Approved to build automation testing\u0027",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:45",
+    "testCase": "LeaveRequestWorkflow",
+    "operation": "Employee Logout",
+    "details": "Logged out from employee account (final)",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:47",
+    "testCase": "EmployeeCRUDAndSearchFlow",
+    "operation": "Navigate to Login Page",
+    "details": "Loaded login page successfully",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:47",
+    "testCase": "EmployeeCRUDAndSearchFlow",
+    "operation": "Admin Login",
+    "details": "Logged in as admin@admin.com",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:49",
+    "testCase": "EmployeeCRUDAndSearchFlow",
+    "operation": "Add Employee",
+    "details": "Added employee: Auto Tester 07653 (IT, QA Automation Engineer)",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:50",
+    "testCase": "EmployeeCRUDAndSearchFlow",
+    "operation": "Search Employee",
+    "details": "Searched and found matching card for: Auto Tester 07653",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:52",
+    "testCase": "EmployeeCRUDAndSearchFlow",
+    "operation": "Search Non-Existent Employee",
+    "details": "Confirmed card is hidden for query: NonExistentNameXYZ123",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:56",
+    "testCase": "EmployeeCRUDAndSearchFlow",
+    "operation": "Edit Employee",
+    "details": "Edited employee details. New Name: Auto Tester 07653 (Updated), Dept: Finance, Pos: Lead E2E Engineer",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:57",
+    "testCase": "EmployeeCRUDAndSearchFlow",
+    "operation": "Delete Employee",
+    "details": "Deleted employee: Auto Tester 07653 (Updated)",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:46:59",
+    "testCase": "EmployeeLoginAndProfileFlow",
+    "operation": "Navigate to Login Page",
+    "details": "Loaded login page successfully",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:47:00",
+    "testCase": "EmployeeLoginAndProfileFlow",
+    "operation": "Employee Login",
+    "details": "Logged in as ram kumar (720823108011@hit.edu.in)",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:47:02",
+    "testCase": "EmployeeLoginAndProfileFlow",
+    "operation": "Update Employee Profile",
+    "details": "Updated contact phone number to 4538376469",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-07-18 16:47:02",
+    "testCase": "EmployeeLoginAndProfileFlow",
+    "operation": "Employee Logout",
+    "details": "Logged out from employee account",
+    "status": "SUCCESS"
+  }
+]
